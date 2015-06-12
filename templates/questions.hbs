@@ -1,1 +1,10 @@
-<h1>Questions</h1>
+<h1>Questions about why Ember is such a bitch.</h1>
+
+<ul>
+  {{#each}}
+    <li>{{title}}</li>
+  {{/each}}
+</ul>
+
+
+<p>{{#link-to 'new-question' classNames="btn btn-default"}}Add a New Question{{/link-to}}</p>
