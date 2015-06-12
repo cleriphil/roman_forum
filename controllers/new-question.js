@@ -15,9 +15,6 @@ MessageBoard.NewQuestionController = Ember.Controller.extend({
 
 
       this.transitionToRoute('questions');
-
-      }
+    }
   }
-
-
 })
