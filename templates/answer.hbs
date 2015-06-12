@@ -1,0 +1,21 @@
+
+{{#if isEditing}}
+  <form>
+    <label for="answer">Answer</label>
+    {{input id="answer" class="form-control" value=answer}}
+
+    <label for="author">Author</label>
+    {{textarea id="author" class="form-control" value=author}}
+  <br>
+
+  <button class="btn btn-default" {{action 'save'}}>Save Changes</button>
+</form>
+{{else}}
+  <div class="single-answer question-answer-box">
+    <h3>{{author}} said, "{{answer}}"</h3>
+    <div class="alter-buttons-answer">
+      <button class="btn btn-default" {{action 'edit'}}><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+      <button class="btn btn-default" {{action 'delete'}}><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+    </div>
+  </div>
+{{/if}}
