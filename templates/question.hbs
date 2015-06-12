@@ -3,22 +3,22 @@
 {{#if isEditing}}
 
   <form>
-    <label for="question">question</label>
-    {{input id="question" class="form-control" value=question}}
+    <label for="question">Question</label>
+    {{input id="question" class="form-control text-font" value=question}}
 
     <label for="description">Description</label>
-    {{textarea id="description" class="form-control" value=description}}
+    {{textarea id="description" class="form-control text-font" value=description}}
 
-    <label for="author">author</label>
-    {{input id="author" class="form-control" value=author}}
+    <label for="author">Author</label>
+    {{input id="author" class="form-control text-font" value=author}}
   <br>
 
       <button class="btn btn-primary" {{action 'save'}}>Save Changes</button>
   </form>
 {{else}}
   <div class="question-answer-box">
-    <h3>Question: {{question}}</h3>
-    <h4>{{description}}</h4>
+    <h3>Q: {{question}}</h3>
+    <h4 class="text-font">{{description}}</h4>
     <h4>Asked by {{author}}</h4>
     <div class="alter-buttons">
 
@@ -33,7 +33,7 @@
     <h4>Answers:</h4>
       <ul>
         {{#each answers}}
-          <li>{{author}} said, {{#link-to 'answer' this.id}}"{{answer}}"{{/link-to}}</li>
+          <li>{{author}} said, {{#link-to 'answer' this.id}}"<span class="text-font">{{answer}}</span>"{{/link-to}}</li>
         {{/each}}
       </ul>
 

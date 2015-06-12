@@ -4,10 +4,10 @@
 
 <form>
   <label for="answer">Answer:</label>
-  {{input id="answer" class="form-control" value=answer}}
+  {{textarea id="answer" class="form-control text-font" value=answer}}
 
   <label for="author">Author:</label>
-  {{textarea id="author" class="form-control" value=author}}
+  {{input id="author" class="form-control text-font" value=author}}
 <br>
     <button class="btn btn-default check-mark" {{action 'save'}}><span class="glyphicon glyphicon-ok"></span></button>
 </form>

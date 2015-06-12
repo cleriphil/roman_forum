@@ -1,3 +1,9 @@
+body {
+  background-image: url('../img/piranesi.jpg');
+  background-size: 100% 100%;
+  min-height: 700px;
+}
+
 a:hover {
   text-decoration: none;
   color: #B29600;
@@ -7,21 +13,15 @@ a {
 color: #CD5555;
 }
 
-
-li {
-  list-style-type: none;
-}
-
-body {
-  background-image: url('../img/piranesi.jpg');
-  background-size: 100% 100%;
-  min-height: 700px;
+.question-answer-box ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .contentboard {
   margin-top: 50px;
   background: rgba(255, 255, 255, .8);
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   padding-bottom: 10px;
   border-radius: 5px;
 }
@@ -48,18 +48,20 @@ body {
 
 .question-answer-box {
   border: 1px solid gray;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   background-color: #ffffff;
   margin-top: 10px;
 }
 
 .single-answer {
+  padding-left: 10px;
   min-height: 120px;
 }
+
 .alter-buttons-answer {
   position: relative;
-  top: 10px;
+  top: -33px;
   right: 10px;
   float: right;
 }
@@ -84,4 +86,8 @@ body {
 .inner-container {
   position: relative;
   top: -30px;
+}
+
+.text-font {
+  font-family: 'Alegreya', serif;
 }

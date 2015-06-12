@@ -1,13 +1,13 @@
 <h1 class="text-center">Ask a Question</h1>
 <form>
   <label for="question">Question</label>
-  {{input id="question" class="form-control" value=question}}
+  {{input id="question" class="form-control text-font" value=question}}
 
   <label for="description">Description</label>
-  {{textarea id="description" class="form-control" value=description}}
+  {{textarea id="description" class="form-control text-font" value=description}}
 
   <label for="author">Author</label>
-  {{input id="author" class="form-control" value=author}}
+  {{input id="author" class="form-control text-font" value=author}}
 <br>
 
   <button class="btn btn-default check-mark" {{action 'save'}}><span class="glyphicon glyphicon-ok"></span></button>
