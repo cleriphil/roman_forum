@@ -1,8 +1,7 @@
-<h1>Questions about why Ember is such a bitch.</h1>
-
+<h1>Questions:</h1>
 <ul>
   {{#each}}
-    <li>{{title}}</li>
+    <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}}</li>
   {{/each}}
 </ul>
 

@@ -1,0 +1,23 @@
+<h2>{{question}}</h2>
+<h3>{{description}}</h3>
+<h3>{{author}}</h3>
+
+{{#if isEditing}}
+
+  <form>
+    <label for="question">question</label>
+    {{input id="question" class="form-control" value=question}}
+
+    <label for="description">Description</label>
+    {{textarea id="description" class="form-control" value=description}}
+
+    <label for="author">author</label>
+    {{input id="author" class="form-control" value=author}}
+  <br>
+
+      <button class="btn btn-primary" {{action 'save'}}>Save Changes</button>
+  </form>
+{{else}}
+  <button class="btn btn-primary" {{action 'edit'}}>Edit Question</button>
+  <button class="btn btn-danger" {{action 'delete'}}>Delete Question</button>
+{{/if}}

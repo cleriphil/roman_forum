@@ -1,5 +1,5 @@
 MessageBoard.Question = DS.Model.extend({
-  title: DS.attr(),
+  question: DS.attr(),
   description: DS.attr(),
-  date: DS.attr()
+  author: DS.attr()
 });

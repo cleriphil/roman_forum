@@ -2,16 +2,16 @@ MessageBoard.NewQuestionController = Ember.Controller.extend({
   actions: {
     save: function() {
       var question = this.store.createRecord('question', {
-        title: this.get('title'),
+        question: this.get('question'),
         description: this.get('description'),
-        date: this.get('date'),
+        author: this.get('author'),
       });
 
       question.save();
 
-      this.set('title', '');
+      this.set('question', '');
       this.set('description', '');
-      this.set('date', '');
+      this.set('author', '');
 
 
       this.transitionToRoute('questions');

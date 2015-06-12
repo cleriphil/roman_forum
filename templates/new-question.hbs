@@ -1,14 +1,14 @@
 <h1>Add a New Question</h1>
 <form>
-  <label for="title">Title</label>
-  {{input id="title" class="form-control" value=title}}
+  <label for="question">question</label>
+  {{input id="question" class="form-control" value=question}}
 
   <label for="description">Description</label>
   {{textarea id="description" class="form-control" value=description}}
 
-  <label for="date">Date</label>
-  {{input id="date" class="form-control" type="date" value=date}}
+  <label for="author">author</label>
+  {{input id="author" class="form-control" type="author" value=author}}
 <br>
 
-    <button class="btn btn-primary" {{action 'save'}}>Save</button>
+  <button class="btn btn-primary" {{action 'save'}}>Save</button>
 </form>
