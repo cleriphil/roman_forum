@@ -21,14 +21,14 @@
   <h4>Answers:</h4>
     <ul>
       {{#each answers}}
-        <li>{{answer}} {{author}}</li>
+        <li>{{author}} says, "{{answer}}"{{#link-to 'answer' this.id classNames="answer-link"}} O{{/link-to}}</li>
       {{/each}}
     </ul>
 
 
-  <button class="btn btn-primary" {{action 'edit'}}>Edit Question</button>
-  <button class="btn btn-danger" {{action 'delete'}}>Delete Question</button>
-  <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Add Answer{{/link-to}}</p>
+  <button class="btn btn-default" {{action 'edit'}}>Edit Question</button>
+  <button class="btn btn-default" {{action 'delete'}}>Delete Question</button>
+  <p>{{#link-to 'new-answer' this.id classNames="btn btn-default"}}Add Answer{{/link-to}}</p>
   {{outlet}}
 
 {{/if}}
