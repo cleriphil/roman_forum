@@ -1,0 +1,13 @@
+
+<h2>Add an Answer</h2>
+
+
+<form>
+  <label for="answer">Answer:</label>
+  {{input id="answer" class="form-control" value=answer}}
+
+  <label for="author">Author:</label>
+  {{textarea id="author" class="form-control" value=author}}
+<br>
+    <button class="btn btn-primary" {{action 'save'}}>Save</button>
+</form>

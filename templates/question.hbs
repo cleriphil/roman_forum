@@ -1,6 +1,6 @@
-<h2>{{question}}</h2>
-<h3>{{description}}</h3>
-<h3>{{author}}</h3>
+<h3>{{question}}</h3>
+<h4>{{description}}</h4>
+<h4>{{author}}</h4>
 
 {{#if isEditing}}
 
@@ -18,6 +18,17 @@
       <button class="btn btn-primary" {{action 'save'}}>Save Changes</button>
   </form>
 {{else}}
+  <h4>Answers:</h4>
+    <ul>
+      {{#each answers}}
+        <li>{{answer}} {{author}}</li>
+      {{/each}}
+    </ul>
+
+
   <button class="btn btn-primary" {{action 'edit'}}>Edit Question</button>
   <button class="btn btn-danger" {{action 'delete'}}>Delete Question</button>
+  <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Add Answer{{/link-to}}</p>
+  {{outlet}}
+
 {{/if}}
