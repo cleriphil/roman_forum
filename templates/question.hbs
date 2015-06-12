@@ -33,14 +33,18 @@
     <h4>Answers:</h4>
       <ul>
         {{#each answers}}
-          <li>{{author}} said, {{#link-to 'answer' this.id}}"{{answer}}" {{/link-to}}</li>
+          <li>{{author}} said, {{#link-to 'answer' this.id}}"{{answer}}"{{/link-to}}</li>
         {{/each}}
       </ul>
 
 
+    <div class="plus-icon">
 
-    <p>{{#link-to 'new-answer' this.id classNames="btn btn-default"}}Add Answer{{/link-to}}</p>
-    {{outlet}}
+    {{#link-to 'new-answer' this.id classNames="btn-default"}}<span class="glyphicon glyphicon-plus"></span>{{/link-to}}
+    </div>
   </div>
+
+
+    {{outlet}}
 
 {{/if}}

@@ -48,9 +48,19 @@ body {
   float: right;
 }
 
+.plus-icon {
+  position: relative;
+  top: -25px;
+  right: 10px;
+  float: right;
+}
+
 .alter-buttons {
   position: relative;
   top: -40px;
   right: 10px;
+  float: right;
+}
+.check-mark {
   float: right;
 }
