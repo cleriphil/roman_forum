@@ -10,6 +10,6 @@ you must seek advice". Users may add, edit and delete questions. For each questi
 
 - For Mac, open terminal and run: python -m SimpleHTTPServer
 
-- In browser, navigate to localhost:8000
+- In browser, navigate to localhost:8000  
 
 MIT License
