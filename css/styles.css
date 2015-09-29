@@ -1,5 +1,6 @@
 body {
   background-image: url('../img/piranesi.jpg');
+  background-color: gray;
   background-repeat: repeat-x;
   background-size: 100% 100%;
   min-height: 700px;
